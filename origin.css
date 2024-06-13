@@ -1,0 +1,343 @@
+@import url(grids.css);
+
+:root {
+    --background: #ffffff;
+    --accent: #673AB7;
+    --color: #000000;
+    --mark: #FDD835;
+    --quote: #90A4AE;
+    --stripe: #0000000e;
+    --border: #9E9E9E;
+    --hover: #ffffff4c;
+    --hover-darker: #0000002c;
+    --border-radius: .5rem;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin: 0;
+    background: var(--background);
+    color: var(--color);
+}
+
+main,
+article {
+    width: 80vw;
+    margin: auto;
+}
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body > header {
+    background-color: var(--accent);
+    padding: 1rem 0;
+    margin: 0 0 2rem 0;
+    line-height: 1.2;
+    box-shadow: inset 0 0 0 99em #ffffffde;
+}
+
+body > footer {
+    background-color: var(--accent);
+    padding: .3rem 0;
+    margin: 2rem 0 0 0;
+    color: #757575;
+    box-shadow: inset 0 0 0 99em #ffffffde;
+}
+
+section article {
+    border-top: 1px solid var(--accent);
+}
+
+tr:first-child,
+section article:last-child {
+    border-bottom: 1px solid var(--border);
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    font: inherit;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.44rem;
+}
+
+h5 {
+    font-size: 1.15rem;
+}
+
+h6 {
+    font-size: .96rem;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0 1.2rem;
+    border-left: .3rem solid var(--quote);
+    font-style: italic;
+    color: #757575;
+}
+
+details {
+    padding: .6rem 1.2rem;
+}
+
+summary {
+    cursor: pointer;
+}
+
+details,
+fieldset,
+pre,
+hr {
+    border: 1px solid var(--border);
+}
+
+figure:has(table) {
+    margin: 0;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--stripe);
+}
+
+pre {
+    padding: .8rem 1.2rem;
+}
+
+[data-tooltip]:hover::after,
+fieldset,
+details,
+aside,
+mark,
+pre {
+    border-radius: var(--border-radius);
+}
+
+a,
+code,
+pre {
+    color: var(--accent);
+}
+
+code,
+kbd,
+pre {
+    font-family: monospace;
+}
+
+b,
+dt,
+strong {
+    font-weight: 600;
+}
+
+mark {
+    background-color: var(--mark);
+}
+
+mark {
+    padding: 2px 5px;
+}
+
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    white-space: nowrap;
+    background-color: var(--accent);
+    font-size: .8rem;
+    padding: 0 8px;
+    color: #fff;
+    left: 0;
+    top: 1.5rem;
+}
+
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
+
+aside {
+    border: 1px solid var(--accent);
+    overflow: hidden;
+}
+
+div:has([class^=col]) > * {
+    margin-right: .5rem;
+}
+
+div:has([class^=col]) > :last-child {
+   margin-right: 0;
+}
+
+aside header {
+    border-bottom: 1px solid var(--accent);
+    padding: .2rem 1.2rem;
+}
+
+aside article {
+    padding: .5rem 1.2rem;
+    border: 0;
+}
+
+aside footer {
+    padding: 0 1.2rem 1.2rem;
+}
+
+aside :is(h1, h2, h3, h4, h5, h6) {
+    margin: 0;
+}
+
+.modal > input {
+  display: none;
+}
+
+.modal > input ~ * {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.modal .overlay {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  background: rgba(17, 17, 17, 0.2);
+  backdrop-filter: blur(5px);
+  z-index: 100000;
+}
+
+.modal .overlay ~ * {
+  border: 0;
+  top: 50%;
+  left: 50%;
+  min-width: 50vw;
+  position: fixed;
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+  padding: 0 2rem 2.5rem 2rem;
+  transform: translate(-50%, -50%);
+  z-index: 1000000;
+}
+
+.modal > input:checked ~ * {
+  display: block;
+  max-height: 10000px;
+}
+
+.modal > input:checked ~ .overlay ~ * {
+  max-height: 90%;
+  overflow: auto;
+  transform: translate(-50%, -50%);
+}
+
+dialog footer {
+    float: right;
+}
+
+label {
+    display: block;
+}
+
+input:not([type=submit], [type=reset], [type=button], [type=range], [type=radio], [type=checkbox]),
+select,
+textarea {
+    padding: .4rem .6rem;
+    font: inherit;
+    line-height: normal;
+    background: 0 0;
+    transition: .1s;
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+input:not([type=submit], [type=reset], [type=button], [type=range], [type=radio], [type=checkbox]):focus,
+select:focus,
+textarea:focus {
+    border: 1px solid var(--accent);
+    outline: none;
+    box-shadow: var(--accent) 0px 0px 0px 1.5px;
+}
+
+input:is([type=checkbox], [type=radio]) {
+    accent-color: var(--accent);
+    scale: 1.5;
+    margin-right: .8rem;
+}
+
+input[type=color] {
+    padding: 3px !important;
+}
+
+input[type=range] {
+    accent-color: var(--accent);
+    width: 100%;
+}
+
+.button,
+button,
+input:is([type=submit], [type=reset], [type=button]),
+label[type=button] {
+    all: unset;
+    display: inline-block;
+    padding: .6rem 1rem;
+    border-radius: var(--border-radius);
+    background-color: var(--accent);
+    color: #fff;
+    line-height: normal;
+    user-select: none;
+    cursor: pointer;
+    transition: .1s;
+    white-space: nowrap;
+}
+
+.button:hover,
+button:hover,
+input:is([type=submit], [type=reset], [type=button]):hover,
+label[type=button]:hover {
+    box-shadow: inset 0 0 0 99em var(--hover);
+}
+
+.button:active,
+button:active,
+input:is([type=submit], [type=reset], [type=button]):active,
+label[type=button]:active {
+    box-shadow: inset 0 0 0 99em var(--hover-darker);
+}
+
+a[aria-disabled=true],
+button:disabled,
+input:disabled {
+    opacity: .4;
+    pointer-events: none;
+}
