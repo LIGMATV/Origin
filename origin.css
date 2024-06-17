@@ -2,6 +2,7 @@
 
 :root {
     --background: #ffffff;
+    --background-secondary: #F3F3F6;
     --accent: #673AB7;
     --color: #000000;
     --mark: #FDD835;
@@ -10,19 +11,28 @@
     --border: #9E9E9E;
     --hover: #ffffff4c;
     --hover-darker: #0000002c;
+    --font-size: 1.05rem;
+    --pre-font-size: .95rem;
     --border-radius: .5rem;
+}
+
+::selection {
+    color: #ffffff;
+    background: var(--accent);
 }
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     line-height: 1.8;
-    font-size: 1.05rem;
+    font-size: var(--font-size);
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0;
     background: var(--background);
     color: var(--color);
 }
 
-main,
+body > :not(header, footer),
 article {
     width: 80vw;
     margin: auto;
@@ -49,12 +59,15 @@ body > footer {
     box-shadow: inset 0 0 0 99em #ffffffde;
 }
 
+section {
+    border-bottom: 1px solid var(--accent);
+}
+
 section article {
     border-top: 1px solid var(--accent);
 }
 
-tr:first-child,
-section article:last-child {
+tr:first-child {
     border-bottom: 1px solid var(--border);
 }
 
@@ -102,16 +115,20 @@ summary {
     cursor: pointer;
 }
 
-details,
 fieldset,
-pre,
 hr {
     border: 1px solid var(--border);
 }
 
+figure:has(table),
+fieldset,
+pre {
+    min-width: 0;
+    overflow-x: auto;
+}
+
 figure:has(table) {
     margin: 0;
-    overflow-x: auto;
 }
 
 table {
@@ -129,7 +146,13 @@ tbody tr:nth-child(even) {
     background-color: var(--stripe);
 }
 
+details,
 pre {
+    background-color: var(--background-secondary);
+}
+
+pre {
+    font-size: var(--pre-font-size);
     padding: .8rem 1.2rem;
 }
 
@@ -138,8 +161,14 @@ fieldset,
 details,
 aside,
 mark,
+kbd,
 pre {
     border-radius: var(--border-radius);
+}
+
+kbd {
+    border: 1px solid var(--accent);
+    border-bottom: 3px solid var(--accent);
 }
 
 a,
@@ -164,6 +193,7 @@ mark {
     background-color: var(--mark);
 }
 
+kbd,
 mark {
     padding: 2px 5px;
 }
@@ -186,11 +216,6 @@ mark {
     text-decoration: underline dotted;
 }
 
-aside {
-    border: 1px solid var(--accent);
-    overflow: hidden;
-}
-
 div:has([class^=col]) > * {
     margin-right: .5rem;
 }
@@ -199,8 +224,14 @@ div:has([class^=col]) > :last-child {
    margin-right: 0;
 }
 
+aside {
+    overflow: hidden;
+    background-color: var(--background-secondary);
+}
+
 aside header {
-    border-bottom: 1px solid var(--accent);
+    border-bottom: 5px solid #ffffff94;
+    margin-bottom: 4px;
     padding: .2rem 1.2rem;
 }
 
@@ -210,7 +241,7 @@ aside article {
 }
 
 aside footer {
-    padding: 0 1.2rem 1.2rem;
+    padding: 1.3rem 1.2rem;
 }
 
 aside :is(h1, h2, h3, h4, h5, h6) {
@@ -241,11 +272,8 @@ aside :is(h1, h2, h3, h4, h5, h6) {
   border: 0;
   top: 50%;
   left: 50%;
-  min-width: 50vw;
+  max-width: 50vw;
   position: fixed;
-  background-color: var(--background);
-  border-radius: var(--border-radius);
-  padding: 0 2rem 2.5rem 2rem;
   transform: translate(-50%, -50%);
   z-index: 1000000;
 }
@@ -261,8 +289,8 @@ aside :is(h1, h2, h3, h4, h5, h6) {
   transform: translate(-50%, -50%);
 }
 
-dialog footer {
-    float: right;
+.modal footer {
+    text-align: right;
 }
 
 label {

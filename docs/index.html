@@ -1,21 +1,37 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Origin.css</title>
-    <link rel="stylesheet" href="origin.css">
+    <link rel="stylesheet" href="../origin.css">
+    <link rel="stylesheet" href="prism.css">
 </head>
 
 <body id="top" role="document">
     <header>
         <article>
             <h1>Origin.css</h1>
-            <h4>Small but a lot of <b>usefulness</b> framework</h4>
+            <h4>Small but a lot of <b>usefulness</b> framework <sup>Just ~1 KB (minified + gzipped)</sup> </h4>
         </article>
     </header>
     <main>
+        <section id="features">
+            <header>
+                <h1>Features</h1>
+            </header>
+            <p>
+                <ul>
+                    <li>💥 Easily run as fast in a second! <sup>Just ~1 KB (minified + gzipped)</sup></li>
+                    <li>🔎 No even a line of javascript code, CSS Only!</li>
+                    <li>📦 Imported 24 grid colums to use on everywhere!</li>
+                    <li>💬 No classes, beautify all your HTML elements without any changes!</li>
+                    <li>🎨 Customize anything just in the root!</li>
+                    <li>🪶 Created carefully to make an lightweightest CSS ever</li>
+                </ul>
+            </p>
+        </section>
     <nav>
         <ul>
             <li>
@@ -82,6 +98,12 @@
                     <h5>Heading 5</h5>
                     <h6>Heading 6</h6>
                 </div>
+                <pre><code class="language-markup">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -93,21 +115,7 @@
                 <div>
                     <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
                 </div>
-                <footer>
-                    <p><a href="#top">[Top]</a></p>
-                </footer>
-            </article>
-            <article id="text__blockquotes">
-                <header>
-                    <h2>Blockquotes</h2>
-                </header>
-                <div>
-                    <blockquote>
-                        <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
-                        <p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p>
-                        <cite><a href="#!">Said no one, ever.</a></cite>
-                    </blockquote>
-                </div>
+                <pre><code class="language-markup">&lt;p&gt;A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.&lt;/p&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -122,6 +130,10 @@
                         <dt>Definition List Title</dt>
                         <dd>This is a definition list division.</dd>
                     </dl>
+                    <pre><code class="language-markup">&lt;dl&gt;
+    &lt;dt&gt;Definition List Title&lt;/dt&gt;
+    &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
                     <h3>Ordered List</h3>
                     <ol type="1">
                         <li>List Item 1</li>
@@ -156,6 +168,10 @@
                         </li>
                         <li>List Item 3</li>
                     </ol>
+                    <pre><code class="language-markup">&lt;ol type=&quot;1&quot;&gt;
+    &lt;li&gt;List Item 1&lt;/li&gt;
+    &lt;li&gt;List Item 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
                     <h3>Unordered List</h3>
                     <ul>
                         <li>List Item 1</li>
@@ -190,6 +206,10 @@
                         </li>
                         <li>List Item 3</li>
                     </ul>
+                    <pre><code class="language-markup">&lt;ul&gt;
+    &lt;li&gt;List Item 1&lt;/li&gt;
+    &lt;li&gt;List Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
                 </div>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
@@ -206,6 +226,11 @@
                         <cite><a href="#!">Said no one, ever.</a></cite>
                     </blockquote>
                 </div>
+                <pre><code class="language-markup">&lt;blockquote&gt;
+    &lt;p&gt;A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.&lt;/p&gt;
+    &lt;p&gt;It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.&lt;/p&gt;
+    &lt;cite&gt;&lt;a href=&quot;#!&quot;&gt;Said no one, ever.&lt;/a&gt;&lt;/cite&gt;
+&lt;/blockquote&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -218,6 +243,10 @@
                     <summary>Expand for details</summary>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, odio! Odio natus ullam ad quaerat, eaque necessitatibus, aliquid distinctio similique voluptatibus dicta consequuntur animi. Quaerat facilis quidem unde eos! Ipsa.
                 </details>
+                <pre><code class="language-markup">&lt;details&gt;
+    &lt;summary&gt;Expand for details&lt;/summary&gt;
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, odio! Odio natus ullam ad quaerat, eaque necessitatibus, aliquid distinctio similique voluptatibus dicta consequuntur animi. Quaerat facilis quidem unde eos! Ipsa.
+&lt;/details&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -233,6 +262,13 @@
                     Box 564, Disneyland<br>
                     USA
                 </address>
+                <pre><code class="language-markup">&lt;address&gt;
+    Written by &lt;a href=&quot;mailto:webmaster@example.com&quot;&gt;Jon Doe&lt;/a&gt;.&lt;br&gt;
+    Visit us at:&lt;br&gt;
+    Example.com&lt;br&gt;
+    Box 564, Disneyland&lt;br&gt;
+    USA
+&lt;/address&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -244,6 +280,7 @@
                 <div>
                     <hr>
                 </div>
+                <pre><code class="language-markup">&lt;hr&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -313,6 +350,27 @@
                         </tr>
                     </table>
                 </figure>
+                <pre><code class="language-markup">&lt;figure&gt;
+    &lt;table&gt;
+        &lt;caption&gt;Responsive Table with &lt;code&gt;&amp;lt;figure&amp;gt;&lt;/code&gt;&lt;/caption&gt;
+        &lt;tr&gt;
+            &lt;th&gt;First Name&lt;/th&gt;
+            &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Jill&lt;/td&gt;
+            &lt;td&gt;Smith&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Eve&lt;/td&gt;
+            &lt;td&gt;Jackson&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Adam&lt;/td&gt;
+            &lt;td&gt;Johnson&lt;/td&gt;
+       &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/figure&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -322,10 +380,14 @@
                     <h2>Code</h2>
                 </header>
                 <div>
-                    <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
-                    <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
-                    <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
+                    <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd>
+                    <pre><code class="language-markup">&lt;kbd&gt;Cmd&lt;/kbd&gt;</code></pre></p>
+                    <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code>
+                    <pre><code class="language-markup">&lt;code&gt;&amp;lt;div&amp;gt;code&amp;lt;/div&amp;gt;&lt;/code&gt;</code></pre></p>
+                    <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp>
+                    <pre><code class="language-markup">&lt;samp&gt;This is sample output from a computer program.&lt;/samp&gt;</code></pre></p>
                     <h2>Pre-formatted text</h2>
+                    <p><i>Not included fancy highlighting (Prism.js) like in the code :)</i></p>
                     <pre>P R E F O R M A T T E D T E X T
   ! " # $ % &amp; ' ( ) * + , - . /
   0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
@@ -334,6 +396,7 @@
   ` a b c d e f g h i j k l m n o
   p q r s t u v w x y z { | } ~ </pre>
                 </div>
+                <pre><code class="language-markup">&lt;pre&gt;P R E F O R M A T T E D T E X T&lt;/pre&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -377,7 +440,11 @@
               <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
               <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
                 </div>
-                            <footer>
+                            
+                <pre><code class="language-markup">&lt;!--&lt;p&gt;&lt;a href=&quot;#!&quot;&gt;This is a text link. But it should not be displayed in a comment&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strong is used to indicate strong importance. But, it should not be displayed in a comment&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This text has added emphasis. But, it should not be displayed in a comment&lt;/em&gt;&lt;/p&gt;--&gt;</code></pre>
+                <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
             </article>
@@ -388,7 +455,8 @@
                 <div>
                     <p>Hover on <abbr data-tooltip="Tooltip!">me, so you can see the...</abbr></p>
                 </div>
-                            <footer>
+                <pre><code class="language-markup">&lt;... data-tooltip=&quot;Tooltip!&quot;&gt;...&lt;/...&gt;</code></pre>
+                <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
             </article>
@@ -403,9 +471,11 @@
                 </header>
                 <div>
                     <h3>Plain <code>&lt;img&gt;</code> element</h3>
-                    <p><img src="https://placehold.co/480x480/D1C4E9/31343C" alt="Placeholder image"></p>
+                    <p><img src="https://placehold.co/480x480/D1C4E9/31343C" alt="Placeholder image">
+                    <pre><code class="language-markup">&lt;img src=&quot;https://placehold.co/480x480/D1C4E9/31343C&quot; alt=&quot;Placeholder image&quot;&gt;</code></pre></p>
                     <h3><code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code> element</h3>
                     <figure><img src="https://placehold.co/420x420/D1C4E9/31343C" alt="Placeholder image"></figure>
+                    <pre><code class="language-markup">&lt;figure&gt;&lt;img src=&quot;https://placehold.co/420x420/D1C4E9/31343C&quot; alt=&quot;Placeholder image&quot;&gt;&lt;/figure&gt;</code></pre>
                     <h3><code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code> and
                         <code>&lt;figcaption&gt;</code> elements
                     </h3>
@@ -413,6 +483,10 @@
                         <img src="https://placehold.co/420x420/D1C4E9/31343C" alt="Placeholder image">
                         <figcaption>Here is a caption for this image.</figcaption>
                     </figure>
+                    <pre><code class="language-markup">&lt;figure&gt;
+    &lt;img src=&quot;https://placehold.co/420x420/D1C4E9/31343C&quot; alt=&quot;Placeholder image&quot;&gt;
+    &lt;figcaption&gt;Here is a caption for this image.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
                     <h3><code>&lt;figure&gt;</code> element with a <code>&lt;picture&gt;</code> element</h3>
                     <figure>
                         <picture>
@@ -421,6 +495,13 @@
                         </picture>
                         <figcaption>Here is a caption for this image.</figcaption>
                     </figure>
+                    <pre><code class="language-markup">&lt;figure&gt;
+    &lt;picture&gt;
+        &lt;source srcset=&quot;https://placehold.co/2000x2000/D1C4E9/31343C&quot; media=&quot;(min-width: 800px)&quot;&gt;
+        &lt;img src=&quot;https://placehold.co/420x420/D1C4E9/31343C&quot; alt=&quot;Placeholder image&quot; /&gt;
+    &lt;/picture&gt;
+    &lt;figcaption&gt;Here is a caption for this image.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
                 </div>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
@@ -431,6 +512,7 @@
                     <h2>Background images</h2>
                 </header>
                 <figure style="background-image:url('https://placehold.co/300x300/EDE7F6/31343C'); width:300px; height: 300px;"></figure>
+                <pre><code class="language-css">background-image:url('https://placehold.co/300x300/EDE7F6/31343C'); width:300px; height: 300px;"</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -440,6 +522,7 @@
                     <h2>Audio</h2>
                 </header>
                 <div><audio controls="">audio</audio></div>
+                <pre><code class="language-markup">&lt;audio controls=&quot;&quot;&gt;audio&lt;/audio&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -449,6 +532,7 @@
                     <h2>Video</h2>
                 </header>
                 <div><video controls="">video</video></div>
+                <pre><code class="language-markup">&lt;video controls=&quot;&quot;&gt;video&lt;/video&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -458,6 +542,7 @@
                     <h2>Canvas</h2>
                 </header>
                 <div><canvas>canvas</canvas></div>
+                <pre><code class="language-markup">&lt;canvas&gt;canvas&lt;/canvas&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -467,8 +552,11 @@
                     <h2>Inline SVG</h2>
                 </header>
                 <div><svg width="100px" height="100px">
-                        <circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle>
+                        <circle cx="100" cy="100" r="100" fill="var(--accent)"></circle>
                     </svg></div>
+                <pre><code class="language-markup">&lt;svg width=&quot;100px&quot; height=&quot;100px&quot;&gt;
+    &lt;circle cx=&quot;100&quot; cy=&quot;100&quot; r=&quot;100&quot; fill=&quot;var(--accent)&quot;&gt;&lt;/circle&gt;
+&lt;/svg&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -478,6 +566,7 @@
                     <h2>IFrame</h2>
                 </header>
                 <div><iframe src="index.html" height="300"></iframe></div>
+                <pre><code class="language-markup">&lt;iframe src=&quot;index.html&quot; height=&quot;300&quot;&gt;&lt;/iframe&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -487,6 +576,7 @@
                     <h2>Embed</h2>
                 </header>
                 <div><embed src="index.html" height="300"></div>
+                <pre><code class="language-markup">&lt;embed src=&quot;index.html&quot; height=&quot;300&quot;&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -496,6 +586,7 @@
                     <h2>Object</h2>
                 </header>
                 <div><object data="index.html" height="300"></object></div>
+                <pre><code class="language-markup">&lt;object data=&quot;index.html&quot; height=&quot;300&quot;&gt;&lt;/object&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -524,6 +615,10 @@
                     <h2>Grid</h2>
                 </header>
                 <p>Grid was basically not default included on Origin.css, but it comes with seperate file and imported by default. <b>grids.css: ~2KB</b> <br>
+                    You can use <code>&lt;div&gt;</code> as container of the columns, like :
+                <pre><code class="language-markup">&lt;div&gt;
+    &lt;... class=&quot;col-*&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </p>
                 <h4>5ths-Based Units</h4>
                 <div>
@@ -692,6 +787,17 @@
                     </footer>
                 </aside>
                 </p>
+                <pre><code class="language-markup">&lt;aside&gt;
+    &lt;header&gt;
+        &lt;h3&gt;Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+        Some text...
+    &lt;/article&gt;
+    &lt;footer&gt;
+        &lt;button&gt;Button&lt;/button&gt;
+    &lt;/footer&gt;
+&lt;/aside&gt;</code></pre>
                 <p>
                 <h4>Using grid example</h4>
                 <div>
@@ -726,15 +832,51 @@
                 <div class="modal">
                     <input id="modal_1" type="checkbox" />
                     <label for="modal_1" class="overlay"></label>
-                    <dialog>
-                        <h3>Heading 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis luctus justo eu pellentesque. In ut velit a arcu porta molestie sit amet fringilla nisi.</p>
+                    <aside>
+                        <header>
+                            <h3>Header</h3>
+                        </header>
+                        <article>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis luctus justo eu pellentesque. In ut velit a arcu porta molestie sit amet fringilla nisi.
+                        </article>
                         <footer>
-                          <a class="button" href="#">Learn more</a>
-                          <label for="modal_1" class="button">Close</label>
+                            <label for="modal_2" class="button">Learn more</label>
+                            <label for="modal_1" class="button">Close</label>
                         </footer>
-                    </dialog>
+                    </aside>
                 </div>
+                <div class="modal">
+                    <input id="modal_2" type="checkbox" />
+                    <label for="modal_2" class="overlay"></label>
+                    <aside>
+                        <img src="https://placehold.co/960x340/D1C4E9/31343C?text=nothing">
+                        <article>
+                            <h4>Learn more</h4>
+                            Some text...
+                        </article>
+                        <footer>
+                            <label for="modal_2" class="button">Back</label>
+                        </footer>
+                    </aside>
+                </div>
+                <pre><code class="language-markup">&lt;label for=&quot;modal_1&quot; class=&quot;button&quot;&gt;Show modal&lt;/label&gt;
+
+&lt;div class=&quot;modal&quot;&gt;
+    &lt;input id=&quot;modal_1&quot; type=&quot;checkbox&quot; /&gt;
+    &lt;label for=&quot;modal_1&quot; class=&quot;overlay&quot;&gt;&lt;/label&gt;
+    &lt;aside&gt;
+        &lt;header&gt;
+            &lt;h3&gt;Header&lt;/h3&gt;
+        &lt;/header&gt;
+        &lt;article&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis luctus justo eu pellentesque. In ut velit a arcu porta molestie sit amet fringilla nisi.
+        &lt;/article&gt;
+        &lt;footer&gt;
+            &lt;label for=&quot;modal_2&quot; class=&quot;button&quot;&gt;Learn more&lt;/label&gt;
+           &lt;label for=&quot;modal_1&quot; class=&quot;button&quot;&gt;Close&lt;/label&gt;
+         &lt;/footer&gt;
+    &lt;/aside&gt;
+&lt;/div&gt;</code></pre>
                 <footer>
                     <p><a href="#top">[Top]</a></p>
                 </footer>
@@ -780,6 +922,7 @@
                         <input id="input__file" type="file">
                     </p>
                 </fieldset>
+                <pre><code class="language-markup">&lt;input type=&quot;...&quot;&gt;</code></pre>
                 <p><a href="#top">[Top]</a></p>
                 <fieldset id="forms__select">
                     <legend>Select menus</legend>
@@ -792,6 +935,13 @@
                                 <option>Option Three</option>
                             </optgroup>
                         </select>
+                        <pre><code class="language-markup">&lt;select&gt;
+    &lt;optgroup label=&quot;Option Group&quot;&gt;
+        &lt;option&gt;Option One&lt;/option&gt;
+        &lt;option&gt;Option Two&lt;/option&gt;
+        &lt;option&gt;Option Three&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
                     </p>
                     <p>
                         <label for="select_multiple">Select (multiple)</label>
@@ -802,6 +952,13 @@
                                 <option>Option Three</option>
                             </optgroup>
                         </select>
+                        <pre><code class="language-markup">&lt;select multiple=&quot;multiple&quot;&gt;
+    &lt;optgroup label=&quot;Option Group&quot;&gt;
+        &lt;option&gt;Option One&lt;/option&gt;
+        &lt;option&gt;Option Two&lt;/option&gt;
+        &lt;option&gt;Option Three&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
                     </p>
                 </fieldset>
                 <p><a href="#top">[Top]</a></p>
@@ -813,6 +970,7 @@
                         <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
                     </ul>
                 </fieldset>
+                <pre><code class="language-markup">&lt;label for=&quot;checkbox1&quot;&gt;&lt;input id=&quot;checkbox1&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot; Choice A&lt;/label&gt;</code></pre>
                 <p><a href="#top">[Top]</a></p>
                 <fieldset id="forms__radio">
                     <legend>Radio buttons</legend>
@@ -822,6 +980,7 @@
                         <li><label for="radio3"><input id="radio3" name="radio" type="radio"> Option 3</label></li>
                     </ul>
                 </fieldset>
+                <pre><code class="language-markup">&lt;label for=&quot;radio1&quot;&gt;&lt;input id=&quot;radio1&quot; name=&quot;radio&quot; type=&quot;radio&quot;&gt; Option 1</code></pre>
                 <p><a href="#top">[Top]</a></p>
                 <fieldset id="forms__textareas">
                     <legend>Textareas</legend>
@@ -830,6 +989,7 @@
                         <textarea id="textarea" placeholder="Enter your message here"></textarea>
                     </p>
                 </fieldset>
+                <pre><code class="language-markup">&lt;textarea&gt;&lt;/textarea&gt;</code></pre>
                 <p><a href="#top">[Top]</a></p>
                 <fieldset id="forms__html5">
                     <legend>HTML5 inputs</legend>
@@ -875,6 +1035,7 @@
                         </datalist>
                     </p>
                 </fieldset>
+                <pre><code class="language-markup">&lt;input type=&quot;...&quot;&gt;</code></pre>
                 <p><a href="#top">[Top]</a></p>
                 <fieldset id="forms__action">
                     <legend>Action buttons</legend>
@@ -904,12 +1065,15 @@
         <article>
         <h4>Special thanks to</h4>
         <ul>
-            <li><a href="http://github.com/cbracco/html5-test-page">HTML5 Test Page</a>: Make the website demo easy. </li>
-            <li><a href="https://materialui.co/colors">Material UI Color</a>: A curated color pallete easily. </li>
-            <li><a href="https://github.com/daneden/Toast">Toast</a>: Responsive CSS grids. </li>
+            <li><a href="http://github.com/cbracco/html5-test-page">HTML5 Test Page</a>: Test and Docs page of Origin.css </li>
+            <li><a href="https://github.com/PrismJS/prism/">Prism.js</a>: Make easy to provide an code highlighting!</li>
+            <li><a href="https://materialui.co/colors">Material UI Color</a>: Many default color grabbed from this!</li>
         </ul>
         </article>
     </footer>
-</body>
 
+    <script src="prism.js"></script>
+    <script src="copy-code.js"></script>
+
+</body>
 </html>
